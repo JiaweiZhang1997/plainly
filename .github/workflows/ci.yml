@@ -1,0 +1,26 @@
+name: CI
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm test
+      - run: npm run build
+      - run: npm run build:store
+      - run: npx playwright-core install --with-deps chromium
+      - run: npm run test:ui-localization
+      - run: npm run test:icon-crop
+      - run: npm run test:card-drag
+      - run: npm run test:content-lifecycle

@@ -1,0 +1,14 @@
+{
+  "extensionName": {
+    "message": "释义 · Plainly"
+  },
+  "extensionDescription": {
+    "message": "划词解释术语黑话、翻译与同语学习，支持自选模型、免费词典及 Jev 页内语义搜索。"
+  },
+  "explainShortcut": {
+    "message": "用释义处理选中文字"
+  },
+  "searchShortcut": {
+    "message": "按意思搜索当前网页"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "extensionName": {
+    "message": "Plainly — Explain & Learn"
+  },
+  "extensionDescription": {
+    "message": "Understand selected text with AI explanations, translation, language learning, a free dictionary and semantic search."
+  },
+  "explainShortcut": {
+    "message": "Read selected text with Plainly"
+  },
+  "searchShortcut": {
+    "message": "Search this page by meaning"
+  }
+}

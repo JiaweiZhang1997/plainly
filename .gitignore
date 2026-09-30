@@ -1,0 +1,18 @@
+node_modules/
+dist/
+test-results/
+.DS_Store
+*.zip
+store-dist/
+work/
+releases/
+
+# Private local artwork and credentials are never distributed.
+public/icons/reading-logo.png
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.log
+playwright-report/

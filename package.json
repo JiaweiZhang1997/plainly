@@ -1,0 +1,52 @@
+{
+  "name": "plainly-extension",
+  "version": "0.6.18",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "node --experimental-strip-types --test tests/*.test.ts",
+    "test:browser": "node tests/browser.mjs",
+    "test:search": "node tests/search-browser.mjs",
+    "test:language": "node tests/language-browser.mjs",
+    "test:pdf": "node tests/pdf-browser.mjs",
+    "test:usage": "node tests/usage-browser.mjs",
+    "test:reading-preferences": "node tests/reading-preferences-browser.mjs",
+    "test:pdf-auto": "node tests/pdf-auto-browser.mjs",
+    "test:settings-workflow": "node tests/settings-workflow-browser.mjs",
+    "test:native-pdf-panel": "node tests/native-pdf-panel-browser.mjs",
+    "test:icon-crop": "node tests/icon-crop-browser.mjs",
+    "test:card-drag": "node tests/card-drag-browser.mjs",
+    "test:ui-learning": "node tests/ui-learning-browser.mjs",
+    "test:system-output": "node tests/system-output-browser.mjs",
+    "test:ui-localization": "node tests/ui-localization-browser.mjs",
+    "build:store": "node scripts/build.mjs --store",
+    "package:store": "npm run typecheck && npm test && npm run build:store && npm run screenshots:store && python3 scripts/package-store.py",
+    "test:content-lifecycle": "node tests/content-lifecycle-browser.mjs",
+    "screenshots:store": "node scripts/store-screenshots.mjs"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.1.36",
+    "esbuild": "0.25.12",
+    "playwright-core": "1.58.2",
+    "typescript": "5.9.3"
+  },
+  "dependencies": {
+    "pdfjs-dist": "6.3.289"
+  },
+  "description": "Explain, translate and learn from selected text with your own LLM API. Chrome / Edge extension.",
+  "license": "MIT",
+  "author": "Jiawei Zhang",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JiaweiZhang1997/plainly.git"
+  },
+  "homepage": "https://github.com/JiaweiZhang1997/plainly#readme",
+  "bugs": {
+    "url": "https://github.com/JiaweiZhang1997/plainly/issues"
+  },
+  "engines": {
+    "node": ">=24.0.0"
+  }
+}

@@ -1,0 +1,17 @@
+One question mark. A clearer read.
+
+Plainly is a lightweight reading companion. Select an unfamiliar word or passage, click the question mark, and read an explanation, translation or lesson beside the original text.
+
+• Five explanation modes for unfamiliar expressions, technical terms, internet slang, acronyms and complex sentences.
+• Translation and same-language learning: learn vocabulary, grammar and examples in the source language, or explicitly choose another output language.
+• Bring your own model: presets for DeepSeek, OpenAI, Claude, Gemini, Qwen, GLM, Kimi and OpenRouter, plus compatible third-party or local endpoints. You supply a valid API key and available model. Provider charges may apply; model credits are not included.
+• A free English dictionary works without an LLM key. Optional MyMemory translation requires an explicit source language and is subject to provider limits and availability.
+• Optional Jev semantic search finds relevant passages on the current page from a description of their meaning. It needs a separate Jev connection/key. It is not web search; coverage of long pages may be partial.
+• Native PDFs: select text and use the context menu to work in the side panel. The question-mark overlay cannot appear inside Chrome’s native PDF viewer. An optional built-in reader supports selection overlays, search and highlights. Scanned image PDFs have no OCR.
+• Drag or pin the reading card; adjust text, card size, trigger position and size; upload and crop your own icon. Chinese and English interfaces and editable prompts.
+• Local token totals from provider-reported usage. Missing usage is marked; this is not an account balance or billing statement.
+
+Data and control
+Requests start on click by default; automatic explanations are opt-in. Selected text and enabled nearby context go directly to your chosen provider. Jev receives page passages when searching. API keys stay in local extension storage and do not pass through a developer relay. No advertising or analytics tracking. Read the privacy policy and use providers you trust.
+
+Requires Chrome 128 or later. Chrome internal pages, the Web Store and other protected pages may restrict extensions. AI output can be wrong; verify important information.
