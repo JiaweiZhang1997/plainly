@@ -96,6 +96,10 @@ API 通常按服务商规则收费；同语学习的自动语言识别会额外�
 
 详见[使用说明](docs/usage.zh-CN.md)、[隐私说明源码](public/privacy.html)及[安全反馈](SECURITY.md)。请勿在 Issue 或截图中公开 API Key。
 
+## 建议与反馈
+
+如果你有功能建议、使用反馈或发现问题，欢迎随时[提 Issue](https://github.com/JiaweiZhang1997/plainly/issues/new/choose)，一起把释义做得更好。
+
 ## 参与开发与许可证
 
 欢迎通过 Issue / Pull Request 提交问题与改进，见 [CONTRIBUTING.md](CONTRIBUTING.md)。项目代码采用 [MIT](LICENSE)；PDF.js、字体等依赖遵循各自许可证，见 [第三方声明](public/THIRD_PARTY_NOTICES.txt)。默认问号图标属于本项目；用户自行上传的图片不属于开源分发素材。

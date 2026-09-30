@@ -68,6 +68,10 @@ Keys and preferences stay in local extension storage, not browser sync or an OS 
 
 Provider requests can incur charges, including connection tests and automatic learning-language detection. Token totals reflect only reported usage for this extension on this device, not your account balance or complete bill. Generated answers may be incorrect. See the bilingual [privacy notice](public/privacy.html) and [security policy](SECURITY.md). Never post keys in issues or screenshots.
 
+## Suggestions and feedback
+
+Have a suggestion, feature request, or something that could work better? Feel free to [open an issue](https://github.com/JiaweiZhang1997/plainly/issues/new/choose) anytime. Your feedback helps improve Plainly.
+
 ## Contributing and license
 
 See [CONTRIBUTING.md](CONTRIBUTING.md). Project code is [MIT licensed](LICENSE); PDF.js and other dependencies retain their own licenses listed in [third-party notices](public/THIRD_PARTY_NOTICES.txt). The original question-mark icon is distributed with the project. User-uploaded artwork is not included in the public source or release.
