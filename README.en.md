@@ -56,7 +56,7 @@ npm run test:content-lifecycle
 
 Use `npx playwright-core install --with-deps chromium` on Linux when browser OS dependencies are missing. Tests use isolated browser profiles and local fixture responses, not personal keys or paid APIs.
 
-Run `npm run package:store` to validate, build, capture bilingual screenshots and package under `releases/Plainly-<version>-store/`. A complete materials archive is also created in `releases/`. Nothing is published remotely by this command. Build products, keys, private artwork and working files are excluded from Git.
+Run `npm run package:store` to validate, build, capture bilingual screenshots and package under `releases/Plainly-<version>-store/`. A complete materials archive is also created in `releases/`. A separate `Plainly-<version>-upload-screenshots.zip` contains five 1280×800 JPEGs per group: `zh-CN`, `en`, and `global` (English fallback). Extract it and upload individual images from the matching group, never icons, promotional tiles or the ZIP itself. The packager validates dimensions and color channels. Nothing is published remotely by this command. Build products, keys, private artwork and working files are excluded from Git.
 
 ## Updating
 

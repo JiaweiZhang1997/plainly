@@ -43,8 +43,34 @@ images=root/'store-materials/images'
 for prefix in ('zh','en'):
  for name in ('01-explain','02-learn','03-languages','04-preferences','05-models'):
   data=(images/f'{prefix}-{name}.png').read_bytes();assert data[:8]==b'\x89PNG\r\n\x1a\n' and struct.unpack('>II',data[16:24])==(1280,800)
+  assert data[24:26]==bytes([8,2]), 'Screenshots must be 24-bit RGB PNG without alpha'
+  offset=8
+  while offset<len(data):
+   assert data[offset+4:offset+8]!=b'tRNS', 'Screenshot has PNG transparency'
+   offset+=12+struct.unpack('>I',data[offset:offset+4])[0]
 assert struct.unpack('>II',(images/'promo-440x280.png').read_bytes()[16:24])==(440,280)
 assert struct.unpack('>II',(src/'icons/128.png').read_bytes()[16:24])==(128,128)
+# JPEG upload folders are separate from icons and promotional artwork.
+uploads=root/'store-materials/upload-screenshots'
+image_checks=[]
+for group in ('zh-CN','en','global'):
+ screenshots=sorted((uploads/group).glob('*.jpg'))
+ assert len(screenshots)==5, f'{group}: expected five screenshots'
+ for image in screenshots:
+  data=image.read_bytes();assert data[:2]==b'\xff\xd8'
+  offset=2;dimensions=None
+  while offset<len(data):
+   assert data[offset]==255
+   tag=data[offset+1];offset+=2
+   size=struct.unpack('>H',data[offset:offset+2])[0]
+   if tag in (0xc0,0xc1,0xc2):
+    depth=data[offset+2];height,width=struct.unpack('>HH',data[offset+3:offset+7]);components=data[offset+7]
+    dimensions=(width,height,depth,components);break
+   offset+=size
+  assert dimensions==(1280,800,8,3), (image,dimensions)
+  image_checks.append({'file':str(image.relative_to(uploads)),'width':1280,'height':800,'format':'JPEG','channels':3,'alpha':False})
+(uploads/'format-report.json').write_text(json.dumps(image_checks,indent=2)+'\n')
+
 archive=out/f'plainly-{version}-chrome-web-store.zip'
 with zipfile.ZipFile(archive,'w',zipfile.ZIP_DEFLATED,compresslevel=9) as z:
  for p in files:
@@ -62,5 +88,6 @@ checks={'version':version,'archive':archive.name,'bytes':archive.stat().st_size,
 for name in ('store-browser-report.json','native-pdf-panel-report.json','search-report.json','pdf-auto-report.json','content-lifecycle-report.json'):
  p=root/'test-results'/name
  if p.exists():shutil.copy2(p,out/name)
+screenshots_archive=shutil.make_archive(str(release_root/f'Plainly-{version}-upload-screenshots'),'zip',out,'upload-screenshots')
 materials=shutil.make_archive(str(release_root/f'Plainly-{version}-release-materials'),'zip',release_root,out.name)
-print(json.dumps({'output':str(out),'zip':str(archive),'materials':materials,'bytes':checks['bytes'],'files':len(files),'sha256':sha},indent=2))
+print(json.dumps({'output':str(out),'zip':str(archive),'materials':materials,'screenshots':screenshots_archive,'bytes':checks['bytes'],'files':len(files),'sha256':sha},indent=2))

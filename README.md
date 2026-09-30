@@ -81,7 +81,10 @@ releases/
     images/                     # 商店截图
     SHA256.txt
   Plainly-<版本>-release-materials.zip
+  Plainly-<版本>-upload-screenshots.zip  # 仅截图与上传说明
 ```
+
+截图专用包分为 `zh-CN/`、`en/`、`global/`，每组 5 张 1280×800 JPEG。中文 / 英文组用于对应本地化区域，global 为英文兜底；每个上传框只选一组中的图片，不要混入图标、宣传图或 ZIP。打包时校验 JPEG 尺寸、三色彩通道及 PNG 的 24 位 RGB、无透明通道。
 
 `npm run build:store` 仅构建 `store-dist/`，不发布任何远程内容。所有发布材料都在项目内；`releases/`、`dist/`、`store-dist/`、`work/`、`test-results/` 均不提交 Git。
 

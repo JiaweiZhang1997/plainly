@@ -1,0 +1,122 @@
+[
+  {
+    "file": "zh-CN/01-explain.jpg",
+    "width": 1280,
+    "height": 800,
+    "format": "JPEG",
+    "channels": 3,
+    "alpha": false
+  },
+  {
+    "file": "zh-CN/02-learn.jpg",
+    "width": 1280,
+    "height": 800,
+    "format": "JPEG",
+    "channels": 3,
+    "alpha": false
+  },
+  {
+    "file": "zh-CN/03-languages.jpg",
+    "width": 1280,
+    "height": 800,
+    "format": "JPEG",
+    "channels": 3,
+    "alpha": false
+  },
+  {
+    "file": "zh-CN/04-preferences.jpg",
+    "width": 1280,
+    "height": 800,
+    "format": "JPEG",
+    "channels": 3,
+    "alpha": false
+  },
+  {
+    "file": "zh-CN/05-models.jpg",
+    "width": 1280,
+    "height": 800,
+    "format": "JPEG",
+    "channels": 3,
+    "alpha": false
+  },
+  {
+    "file": "en/01-explain.jpg",
+    "width": 1280,
+    "height": 800,
+    "format": "JPEG",
+    "channels": 3,
+    "alpha": false
+  },
+  {
+    "file": "en/02-learn.jpg",
+    "width": 1280,
+    "height": 800,
+    "format": "JPEG",
+    "channels": 3,
+    "alpha": false
+  },
+  {
+    "file": "en/03-languages.jpg",
+    "width": 1280,
+    "height": 800,
+    "format": "JPEG",
+    "channels": 3,
+    "alpha": false
+  },
+  {
+    "file": "en/04-preferences.jpg",
+    "width": 1280,
+    "height": 800,
+    "format": "JPEG",
+    "channels": 3,
+    "alpha": false
+  },
+  {
+    "file": "en/05-models.jpg",
+    "width": 1280,
+    "height": 800,
+    "format": "JPEG",
+    "channels": 3,
+    "alpha": false
+  },
+  {
+    "file": "global/01-explain.jpg",
+    "width": 1280,
+    "height": 800,
+    "format": "JPEG",
+    "channels": 3,
+    "alpha": false
+  },
+  {
+    "file": "global/02-learn.jpg",
+    "width": 1280,
+    "height": 800,
+    "format": "JPEG",
+    "channels": 3,
+    "alpha": false
+  },
+  {
+    "file": "global/03-languages.jpg",
+    "width": 1280,
+    "height": 800,
+    "format": "JPEG",
+    "channels": 3,
+    "alpha": false
+  },
+  {
+    "file": "global/04-preferences.jpg",
+    "width": 1280,
+    "height": 800,
+    "format": "JPEG",
+    "channels": 3,
+    "alpha": false
+  },
+  {
+    "file": "global/05-models.jpg",
+    "width": 1280,
+    "height": 800,
+    "format": "JPEG",
+    "channels": 3,
+    "alpha": false
+  }
+]
