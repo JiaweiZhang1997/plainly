@@ -75,3 +75,7 @@ Have a suggestion, feature request, or something that could work better? Feel fr
 ## Contributing and license
 
 See [CONTRIBUTING.md](CONTRIBUTING.md). Project code is [MIT licensed](LICENSE); PDF.js and other dependencies retain their own licenses listed in [third-party notices](public/THIRD_PARTY_NOTICES.txt). The original question-mark icon is distributed with the project. User-uploaded artwork is not included in the public source or release.
+
+## Community links
+
+This open-source project links to and recognizes the [LINUX DO community](https://linux.do/).

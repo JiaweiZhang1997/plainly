@@ -103,3 +103,7 @@ API 通常按服务商规则收费；同语学习的自动语言识别会额外�
 ## 参与开发与许可证
 
 欢迎通过 Issue / Pull Request 提交问题与改进，见 [CONTRIBUTING.md](CONTRIBUTING.md)。项目代码采用 [MIT](LICENSE)；PDF.js、字体等依赖遵循各自许可证，见 [第三方声明](public/THIRD_PARTY_NOTICES.txt)。默认问号图标属于本项目；用户自行上传的图片不属于开源分发素材。
+
+## 友链
+
+本开源项目已链接并认可 [LINUX DO 社区](https://linux.do/)。
